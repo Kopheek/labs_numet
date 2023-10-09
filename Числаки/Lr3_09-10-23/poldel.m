@@ -3,8 +3,8 @@ function [ x ] = poldel(a, b, eps)
     b1 = b;
     x = (a+b)/2;
     while (b1-a1>eps)
-        f1 = functnelur(a1)
-        f3 = functnelur(x)
+        f1 = functnelur(a1);
+        f3 = functnelur(x);
         if (f1*f3 < 0)
             b1 = x;
         else
